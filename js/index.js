@@ -2,7 +2,7 @@ const btnBuscar = document.getElementById('btnBuscar')
 const inputCity = document.getElementById('searchCity')
 
 btnBuscar.addEventListener('click', () => {
-    if (inputCity.ariaValueMax.trim().length > 0){
+    if (inputCity.value.trim().length > 0){
         console.log('@@ input value => ', inputCity.value)
         buscarCiudad(inputCity.value)
     }
